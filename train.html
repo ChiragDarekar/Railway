@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link  href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    rel="stylesheet">
+  </head>
+
+  <body>
+
+
+<!--Navbar Unit-->
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Trainin.Cloud</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="/Home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/train.html">Train</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="/customer.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Customer Service
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Issue With Booking</a></li>
+                  <li><a class="dropdown-item" href="#">Payment Issue</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact Us</a>
+              </li>
+    
+            </ul> 
+            </form>
+
+            <div class="mx-2">
+                <button class="btn btn-light"data-bs-toggle="modal" data-bs-target="#LoginModal" >Login</button>
+                <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#SignUpModal">Signup</button>
+              </div>
+          </div>
+        </div>
+      </nav>
+
+<!--Registration Unit-->
+
+      <!-- Login Modal -->
+<div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="LoginModalLabel">Login to Account</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  
+   
+  
+  <!-- SignUp Modal -->
+  <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="SignUpModalLabel">Create Account</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="cexampleInputPassword1">
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Register</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!--Booking Unit-->
+  <section class="get_in_touch">
+    <h2 class="title">Book Your Ticket</h2>
+      <div class="container">
+        <div class="train-form row">
+           
+          <div class="form-field col-lg-6">
+            <input list="SourceStations" class="input-text "  name="FromType" placeholder="Source">
+                                <datalist id="SourceStations">
+                                    <option value="Anubhuti Class (EA)">
+                                        <option value="AC First Class (1A)">
+                                        <option value="Vista Dome AC (EV)">
+                                        <option value="Exec .Chair car  (EC)">
+                                        <option value="AC 2 Tier (2A)">
+                                        <option value="First Class(FC)">
+                                        <option value="AC 3 Tier (3A)">
+                                        <option value="AC 3 Economy(3E)">
+                                        <option value="Vista Dome Chair car (VC)">
+                                        <option value="AC Chair Car (CC)">
+                                        <option value="Sleeper (SL)">
+                                        <option value="Vista dome Non-AC(VS)">
+                                        <option value="Second sitting (2S)">
+                                        <option value="AC 2 Tier (2A)">
+                                        <option value="First Class(FC)">
+                                        <option value="AC 3 Tier (3A)">
+                                        <option value="AC 3 Economy(3E)">
+                                        <option value="Vista Dome Chair car (VC)">
+                                        <option value="AC Chair Car (CC)">
+                                        <option value="Sleeper (SL)">
+                                        <option value="Vista dome Non-AC(VS)">
+                                        <option value="Second sitting (2S)">
+                                </datalist> 
+            <br>
+          </div>
+          <div class="form-field col-lg-6">
+            <input list="DestinationStations" class="input-text" name="FromType" placeholder="Destination">
+                                <datalist id="DestinationStations">
+                                    <option value="Anubhuti Class (EA)">
+                                        <option value="AC First Class (1A)">
+                                        <option value="Vista Dome AC (EV)">
+                                        <option value="Exec .Chair car  (EC)">
+                                        <option value="AC 2 Tier (2A)">
+                                        <option value="First Class(FC)">
+                                        <option value="AC 3 Tier (3A)">
+                                        <option value="AC 3 Economy(3E)">
+                                        <option value="Vista Dome Chair car (VC)">
+                                        <option value="AC Chair Car (CC)">
+                                        <option value="Sleeper (SL)">
+                                        <option value="Vista dome Non-AC(VS)">
+                                        <option value="Second sitting (2S)">
+                                        <option value="AC 2 Tier (2A)">
+                                        <option value="First Class(FC)">
+                                        <option value="AC 3 Tier (3A)">
+                                        <option value="AC 3 Economy(3E)">
+                                        <option value="Vista Dome Chair car (VC)">
+                                        <option value="AC Chair Car (CC)">
+                                        <option value="Sleeper (SL)">
+                                        <option value="Vista dome Non-AC(VS)">
+                                        <option value="Second sitting (2S)">
+                                </datalist>
+            <br>
+          </div>
+          <div class="form-field col-lg-6">
+            <input list="select-class" class="input-text" name="FromType" placeholder="Select Class" >
+                                <datalist id="select-class">
+                                    <option value="Anubhuti Class (EA)">
+                                        <option value="AC First Class (1A)">
+                                        <option value="Vista Dome AC (EV)">
+                                        <option value="Exec .Chair car  (EC)">
+                                        <option value="AC 2 Tier (2A)">
+                                        <option value="First Class(FC)">
+                                        <option value="AC 3 Tier (3A)">
+                                        <option value="AC 3 Economy(3E)">
+                                        <option value="Vista Dome Chair car (VC)">
+                                        <option value="AC Chair Car (CC)">
+                                        <option value="Sleeper (SL)">
+                                        <option value="Vista dome Non-AC(VS)">
+                                        <option value="Second sitting (2S)">
+                                        <option value="AC 2 Tier (2A)">
+                                        <option value="First Class(FC)">
+                                        <option value="AC 3 Tier (3A)">
+                                        <option value="AC 3 Economy(3E)">
+                                        <option value="Vista Dome Chair car (VC)">
+                                        <option value="AC Chair Car (CC)">
+                                        <option value="Sleeper (SL)">
+                                        <option value="Vista dome Non-AC(VS)">
+                                        <option value="Second sitting (2S)">
+                                </datalist>
+            <br>
+          </div>
+         
+          <div class="form-field col-lg-6">
+            <input list="select-type" class="input-text" name="FromType" placeholder="Select Type" >
+                                <datalist id="select-type">
+                                    <option value="Anubhuti Class (EA)">
+                                        <option value="AC First Class (1A)">
+                                        <option value="Vista Dome AC (EV)">
+                                        <option value="Exec .Chair car  (EC)">
+                                        <option value="AC 2 Tier (2A)">
+                                        <option value="First Class(FC)">
+                                        <option value="AC 3 Tier (3A)">
+                                        <option value="AC 3 Economy(3E)">
+                                        <option value="Vista Dome Chair car (VC)">
+                                        <option value="AC Chair Car (CC)">
+                                        <option value="Sleeper (SL)">
+                                        <option value="Vista dome Non-AC(VS)">
+                                        <option value="Second sitting (2S)">
+                                        <option value="AC 2 Tier (2A)">
+                                        <option value="First Class(FC)">
+                                        <option value="AC 3 Tier (3A)">
+                                        <option value="AC 3 Economy(3E)">
+                                        <option value="Vista Dome Chair car (VC)">
+                                        <option value="AC Chair Car (CC)">
+                                        <option value="Sleeper (SL)">
+                                        <option value="Vista dome Non-AC(VS)">
+                                        <option value="Second sitting (2S)">
+                                </datalist>
+          </div>
+
+            
+          <div class="input">
+            <label for="ClassType" >Departure & Return </i></label>
+            <input class="input-text" type="datetime-local" placeholder="select date and time">
+                           
+         </div> 
+
+          <div class="form-field col-lg-12">
+            <button type="submit" value="submit" class="submit-btn">Book</button>
+
+          </div>
+          
+            
+
+
+          </div>
+        </div>
+      </div>
+       
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+  crossorigin="anonymous"
+></script>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+  crossorigin="anonymous"
+></script>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+  integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+  crossorigin="anonymous"
+></script>
+
+  </body>
