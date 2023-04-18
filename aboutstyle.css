@@ -1,0 +1,56 @@
+.footer{
+    margin-top: 5rem;
+}
+.accordion{
+
+    margin-top: 15rem;
+}
+.big-banner{
+    background-image:  rgb(241, 245, 247);
+    
+    
+}
+
+#myCarousel{
+
+    font-family: 'Shantell Sans', cursive;
+    margin-bottom: 0px;
+   
+
+}
+
+
+#row{
+
+    margin-top: 4rem;
+    margin-left: 0rem;
+    background-color: rgb(241, 245, 247);
+    margin-right: 10rem;
+    padding-top:2rem;
+    padding-left: 6rem;
+    padding-bottom: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px 0px rgba(16, 0, 0, 0.129);
+   
+   
+   
+}
+
+.accordion{
+    
+    
+    background-color: antiquewhite;
+    margin-bottom: 5rem;
+    margin-top:1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border-radius: 15px;
+    
+   
+}
+
+.navbar{
+
+    border:1px solid rgb(40, 35, 35);
+}
+
