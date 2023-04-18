@@ -6,7 +6,7 @@
     margin-top: 15rem;
 }
 .big-banner{
-    background-image:  rgb(241, 245, 247);
+    background-image: linear-gradient(93deg,#53b2fe,#065af3);
     
     
 }
@@ -18,6 +18,7 @@
    
 
 }
+
 
 
 #row{
@@ -39,7 +40,7 @@
 .accordion{
     
     
-    background-color: antiquewhite;
+    background-color:  antiquewhite;
     margin-bottom: 5rem;
     margin-top:1rem;
     padding-top: 1rem;

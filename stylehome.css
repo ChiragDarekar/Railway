@@ -5,7 +5,7 @@
 }
 .footer{
 
-    margin-top: 20rem;
+    margin-top: 5rem;
    
    
 }
@@ -15,11 +15,7 @@
     box-shadow: 0 10px 30px 0px rgba(0,0,0,0.1);
     
 }
-.card2{
-    
-   
-    box-shadow: 0 10px 30px 0px rgba(0,0,0,0.1);
-}
+
 
 .rec{
 
@@ -43,7 +39,7 @@ font-family: 'Shantell Sans', cursive;
     margin-top: 4rem;
 }
 
-#flights{
+#train{
 
     display: block;
     margin-top: 3rem;
@@ -54,7 +50,7 @@ font-family: 'Shantell Sans', cursive;
     
 }
 
-.domestic-flights-list-header{
+.domestic-train-list-header{
 
     margin-bottom: -18px;
     font-weight: 600;
@@ -63,7 +59,7 @@ font-family: 'Shantell Sans', cursive;
 
 element.style {
 }
-.domestic-flights-list-header {
+.domestic-train-list-header {
     margin-bottom: -18px;
     font-weight: 600;
 }
@@ -80,7 +76,7 @@ div {
 }
 
 
-.domestic-flights-list{
+.domestic-train-list{
     display: inline-block;
     width: 33%;
     line-height: 3em;
@@ -90,7 +86,7 @@ div {
 
 .cer{
 
-    color:#EC5B24;
+color:#EC5B24;
 margin-top: 2rem;    
 height:4rem;
 margin-bottom: 5rem;
@@ -103,11 +99,13 @@ font-family: 'Shantell Sans', cursive;
 
 
 
-.domestic-flight-routes-links{
+.domestic-train-routes-links{
 
     color:#EC5B24;
+    
 }
 .carousel-item{
     font-family: 'Montserrat', sans-serif;
+
 
 }
