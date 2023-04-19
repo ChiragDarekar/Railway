@@ -1,0 +1,19 @@
+#privacyblock{
+    margin-top:10rem;
+    background-color: antiquewhite;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right:2rem;
+    margin-bottom: 5rem;
+}
+
+.big-banner{
+
+    background-image: linear-gradient(93deg,#53b2fe,#065af3);
+}
+#he5{
+    font-size: 1.2rem;
+    display: inline-block;
+    position: relative;
+    top: 0.2rem;
+}

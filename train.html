@@ -28,7 +28,7 @@
 <nav class="navbar navbar-expand-lg navbar navbar-white bg-white fixed-top  ">
   <div class="container-fluid" >
     
-    <span style="margin-left:1.2rem;">Trainin.Cloud</span>
+    <span style="margin-left:1.2rem; margin-top:0.5rem;"><strong><h3>Trainin.Cloud</h3></strong></span>
     <button
       class="navbar-toggler"
       type="button"
@@ -43,22 +43,18 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" style="margin-left:2rem;" href="/Home.html"><img style="margin-right:0.5rem; height="32" width="32" src="home-3-line.png" style="background-color:aliceblue" />Home</a>
+          <a class="nav-link active" aria-current="page" style="margin-left:2rem;" href="/Home.html"><img style="margin-right:0.5rem; height:32; width:32" src="home-3-line.png"><strong><h5 id="he5">Home</h5></strong></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="margin-left:2rem;" href="/train.html"><img style="margin-right:0.5rem; height="32" width="32" src="train-line.png" style="background-color:aliceblue" />Train</a>
+          <a class="nav-link" style="margin-left:2rem;" href="/train.html"><img style="margin-right:0.5rem;background-color:aliceblue; height:32 ; width:32 " src="train-line.png"  /><strong><h5 id="he5">Train</h5></strong></a>
         </li>
         
         <li class="nav-item">
-          <a class="nav-link " style="margin-left:2rem;" href="/about.html"><img style="margin-right:0.5rem; height="32" width="32" src="community-line.png" style="background-color:aliceblue" />About Us</a>
+          <a class="nav-link " style="margin-left:2rem;" href="/about.html"><img style="margin-right:0.5rem;background-color:aliceblue; height:32 ; width:32 " src="community-line.png" /><strong><h5 id="he5">About Us</h5></strong></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="margin-left:1.7rem;" href="/contact.html"><img style="margin-right:0.5rem; height="32" width="32" src="phone-line.png" style="background-color:aliceblue" />Contact Us</a>
+          <a class="nav-link" style="margin-left:1.7rem;" href="/contact.html"><img style="margin-right:0.5rem;  background-color:aliceblue height:32; width:32 " src="phone-line.png" /><strong><h5 id="he5">Contact Us</h5></strong></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" style="margin-left:2rem;" href="/customer.html"><img style="margin-right:0.5rem; height="32" width="32" src="customer-service-fill.png" style="background-color:aliceblue" /> Customer</a>
-        </li>
-       
       </ul>
 
      
@@ -75,6 +71,7 @@
 </nav>
 
 
+
 <!--Booking Unit-->
 <section class="get_in_touch">
   <h2 class="title">Book Your Ticket</h2>
@@ -82,7 +79,7 @@
       <div class="train-form row">
          
         <div class="form-field col-lg-6">
-          <input list="SourceStations" class="input-text "  name="FromType" placeholder="Source">
+          <input list="SourceStations" id= "source" class="input-text "  name="FromType" placeholder="Source" required>
                               <datalist id="SourceStations">
 
                                 
@@ -157,7 +154,7 @@
           <br>
         </div>
         <div class="form-field col-lg-6">
-          <input list="DestinationStations" class="input-text" name="FromType" placeholder="Destination">
+          <input list="DestinationStations" class="input-text" name="FromType" placeholder="Destination"required>
                               <datalist id="DestinationStations">
                                 <datalist id="SourceStations">
                                   
@@ -285,26 +282,19 @@
           <br>
         </div>
         <div class="form-field col-lg-6">
-          <input list="select-class" class="input-text" name="FromType" placeholder="Select Class" >
+          <input list="select-class" class="input-text" name="FromType" placeholder="Select Class" required>
                               <datalist id="select-class">
                                       <option value="AC First Class (1A)">
                                       <option value="AC 2 Tier (2A)">
-                                      <option value="First Class(FC)">
                                       <option value="AC 3 Tier (3A)">
-                                      <option value="AC 3 Economy(3E)">
                                       <option value="Sleeper (SL)">
-                                      <option value="Second sitting (2S)">
-                                      <option value="AC 2 Tier (2A)">
-                                      
-                                      
-                                      
-                                      
+                       
                               </datalist>
           <br>
         </div>
        
         <div class="form-field col-lg-6">
-          <input list="select-type" class="input-text" name="FromType" placeholder="Select Type" >
+          <input list="select-type" class="input-text" name="FromType" placeholder="Select Type" required>
                               <datalist id="select-type">
                                   <option value="GENERAL">
                                       <option value="TATKAL"> 
@@ -341,13 +331,15 @@
 
        <!--submit button-->
         <div class="form-field col-lg-12">
-          <button type="submit" value="submit" class="submit-btn" onclick="myFunction()">Search</button>
+          <button type="submit" value="submit" class="submit-btn" onclick="myFunction()"><a  href="search.html">Search</a></button>
 
         </div>
         
         <script >
+          
         function myFunction(){
-          alert("Submitted SuccessFully");
+          
+          alert("Loading Results");
         }
         </script>
 
