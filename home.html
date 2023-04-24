@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="stylehome.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TrainIn - Your Travel Partner</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+
+    <!--font style link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    
+  </head>
+  <body  class=" big-banner" >
+
+<!--Navbar Unit-->
+<nav class="navbar navbar-expand-lg navbar navbar-white bg-white fixed-top  ">
+  <div class="container-fluid" >
+    
+    <span style="margin-left:1.2rem; margin-top:0.5rem;"><strong><h3>Trainin.Cloud</h3></strong></span>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" style="margin-left:2rem;" href="/Home.html"><img style="margin-right:0.5rem; height:32; width:32" src="home-3-line.png"><strong><h5 id="he5">Home</h5></strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="margin-left:2rem;" href="/train.html"><img style="margin-right:0.5rem;background-color:aliceblue; height:32 ; width:32 " src="train-line.png"  /><strong><h5 id="he5">Train</h5></strong></a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link " style="margin-left:2rem;" href="/about.html"><img style="margin-right:0.5rem;background-color:aliceblue; height:32 ; width:32 " src="community-line.png" /><strong><h5 id="he5">About Us</h5></strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="margin-left:1.7rem;" href="/contact.html"><img style="margin-right:0.5rem;  background-color:aliceblue; height:32; width:32 " src="phone-line.png" /><strong><h5 id="he5">Contact Us</h5></strong></a>
+        </li>
+      </ul>
+
+     
+      <div class="mx-2">
+          <button class="btn btn-light"data-bs-toggle="modal" data-bs-target="#LoginModal" >Login</button>
+          <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#SignUpModal">Signup</button>
+        </div>
+   
+        
+      </form>
+    </div>
+  
+  </div>
+</nav>
+
+ 
+<!--Registration Unit-->
+
+    <!-- Login Modal -->
+<div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="LoginModalLabel">Login to Account</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required >
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ 
+
+<!-- SignUp Modal -->
+<div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="SignUpModalLabel">Create Account</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3 ">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" required >
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required  >
+          </div>
+          <div class="mb-3">
+            <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="cexampleInputPassword1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required >
+          </div>
+          <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Carousel-->
+
+<div id="myCarousel" class="carousel slide  " data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item ">
+      <img vg class="bd-placeholder-img" width="100%" height="100%" src="wallpaperflare.com_wallpaper.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></img>
+      <div class="container">
+        <div class="carousel-caption text-start">
+          <h1> <b>Book your Happiness.</b></h1>
+          <p>Some representative placeholder content for the first slide of the carousel.</p>
+          <p><a class="btn btn-lg btn-primary" href="train.html">Book Your Travel</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item active">
+      <img class="bd-placeholder-img" width="100%" height="100%" src="wallpaperflare.com_wallpaper (1).jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></img>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1><b>To Your Destination</b></h1>
+          <p>Find a Flexible Train for your next trip</p>
+          <p><a class="btn btn-lg btn-primary" href="train.html">Search For Train</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item" style="opacity: 0.9;">
+      <img class="bd-placeholder-img" width="100%" height="100%" src="prakash-sahoo-MgppNRJShm0-unsplash22.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></img>
+      <div class="container">
+        <div class="carousel-caption text-end">
+          <h1><b>Plan Your Journey</b></h1>
+          <p>Make this Weekend your one of the best</p>
+          <p><a class="btn btn-lg btn-primary " href="train.html">Book Ticket</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<!--recommandations-->
+<div class="container rec">
+  <b>Recommanded For You</b>
+</div>
+
+
+
+<!--card-->
+<div class="container  ">
+
+
+   <div class="card mb-3 card1 " style="max-height: 300px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="anirudh-PJUbLL5g9BY-unsplash.jpg"   class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Hill Stations</h5>
+        <p class="card-text">Enjoy the Journey Through Train on these tracks <b> Listed Below</b></p>
+        <p class="card-text"><small class="text-muted"> <b>List of Hill Railways :</b> <br> 1) Darjeeling Himaliyan Railway <br>2) Nilgiri Mountain Railway <br>3) Kalka Shimla Railway <br> 4) Matheran Hill Railway <br> 5) Kangra Valley Railway  Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+   </div>
+ 
+   
+
+
+</div>
+
+
+
+
+
+<div class="container cer">
+  <b>Popular Routes</b>
+</div>
+
+<div id="train" class="container">
+  
+  <div class="domestic-train-list-container   container d-flex  flex-wrap justify-content-center ">
+    <div class="domestic-train-list ">
+    <img class="bd-placeholder-img rounded-circle" width="120" height="120" src="https://images.ixigo.com/image/upload/flightshome/79ee38cdbe961dccc3474b0bb92a3e06-nehrw.png">
+    <div class="domestic-train-list-header" >Mumbai Railway</div>
+    <div>From: <a class="domestic-train-routes-links" href="train.html">Goa, </a>
+      <a class="domestic-train-routes-links" href="train.html">Delhi, </a>
+      <a class="domestic-train-routes-links" href="train.html">Bangalore, </a>
+      <a class="domestic-train-routes-links" href="train.html">Ahmedabad </a>
+    </div></div><div class="domestic-train-list">
+      <img class="bd-placeholder-img rounded-circle" width="120" height="120" src="https://images.ixigo.com/image/upload/flightshome/4c3658a4867b64f0cd3806ba996b65b9-hgqbk.png">
+      <div class="domestic-train-list-header" >Delhi Railway</div>
+      <div>From: <a class="domestic-train-routes-links" href="train.html">Mumbai, </a>
+        <a class="domestic-train-routes-links" href="train.html">Goa, </a>
+        <a class="domestic-train-routes-links" href="train.html">Bangalore, </a>
+        <a class="domestic-train-routes-links" href="train.html">Pune </a>
+
+      </div></div><div class="domestic-train-list">
+        <img class="bd-placeholder-img rounded-circle" width="120" height="120" src="https://images.ixigo.com/image/upload/flightshome/2aa9b6f5152b47e8fe6f3c6869005b64-kwkop.png">
+        <div class="domestic-train-list-header" >Kolkata Railway</div>
+        <div>From: <a class="domestic-train-routes-links" href="train.html">Mumbai, </a>
+          <a class="domestic-train-routes-links" href="train.html">Delhi, </a>
+          <a class="domestic-train-routes-links" href="train.html">Bangalore, </a>
+          <a class="domestic-train-routes-links" href="train.html">Bagdogra </a></div>
+        </div>
+        <div class="domestic-train-list">
+          <img class="bd-placeholder-img rounded-circle" width="120" height="120" src="https://images.ixigo.com/image/upload/flightshome/d68be4fa4a16e49ad3c604ff56a6e381-aavhe.png">
+          <div class="domestic-train-list-header">Chennai Railway</div>
+          <div>From: <a class="domestic-train-routes-links" href="train.html">Mumbai, </a>
+            <a class="domestic-train-routes-links" href="train.html">Delhi, </a>
+            <a class="domestic-train-routes-links" href="train.html">Madurai, </a>
+            <a class="domestic-train-routes-links" href="train.html">Coimbatore </a>
+          </div>
+        </div>
+          <div class="domestic-train-list">
+            <img class="bd-placeholder-img rounded-circle" width="120" height="120" src="https://images.ixigo.com/image/upload/flightshome/233a5d159be13a22fe3c08f5d2843886-znstx.png">
+            <div class="domestic-train-list-header" >Hyderabad Railway</div>
+            <div>From: <a class="domestic-train-routes-links" href="train.html">Mumbai, </a>
+              <a class="domestic-train-routes-links" href="train.html">Goa, </a>
+              <a class="domestic-train-routes-links" href="train.html">Bangalore, </a>
+              <a class="domestic-train-routes-links" href="train.html">Delhi </a>
+            </div>
+          </div>
+            <div class="domestic-train-list">
+              <img class="bd-placeholder-img rounded-circle" width="120" height="120" src="https://images.ixigo.com/image/upload/flightshome/ff1243e5e4925d7d2a0b7132efd1f028-dyasj.png">
+              <div class="domestic-train-list-header" >Ahemdabad Railway</div>
+              <div>From: <a class="domestic-train-routes-links" href="train.html">Mumbai, </a>
+                <a class="domestic-train-routes-links" href="train.html">Delhi, </a>
+                <a class="domestic-train-routes-links" href="train.html">Bangalore, </a>
+                <a class="domestic-train-routes-links" href="train.html">Goa </a>
+              </div>
+            </div>
+            <div class="domestic-train-list">
+              <img class="bd-placeholder-img rounded-circle" width="120" height="120" src="https://images.ixigo.com/image/upload/home/d924fcc85d0901057de8bc07a01321c9-ycbdq.png">
+              <div class="domestic-train-list-header" >Bangalore Railway</div>
+              <div>From: <a class="domestic-train-routes-links" href="train.html">Mumbai, </a>
+                <a class="domestic-train-routes-links" href="train.html">Delhi, </a>
+                <a class="domestic-train-routes-links" href="train.html">Goa, </a>
+                <a class="domestic-train-routes-links" href="train.html">Hyderabad </a>
+              </div>
+            </div>
+            <div class="domestic-train-list">
+              <img class="bd-placeholder-img rounded-circle" width="120" height="120" src="https://images.ixigo.com/image/upload/home/63de17e2b3f2163c39ccffdb7b1ad719-oikej.png">
+              <div class="domestic-train-list-header" >Pune Railway</div>
+              <div>From: <a class="domestic-train-routes-links" href="train.html">Goa, </a>
+                <a class="domestic-train-routes-links" href="train.html">Delhi, </a>
+                <a class="domestic-train-routes-links" href="train.html">Bangalore, </a>
+                <a class="domestic-train-routes-links" href="train.html">Nagpur </a>
+              </div>
+            </div>
+            <div class="domestic-train-list">
+              <img class="bd-placeholder-img rounded-circle" width="120" height="120" src="https://images.ixigo.com/image/upload/flightshome/32e5ac30faeeacef567a44509e8b707a-hlyfd.png">
+              <div class="domestic-train-list-header" >Goa Railway</div>
+              <div >From: <a class="domestic-train-routes-links" href="train.html">Mumbai, </a>
+                <a class="domestic-train-routes-links" href="train.html">Delhi, </a>
+                <a class="domestic-train-routes-links" href="train.html">Bangalore, </a>
+                <a class="domestic-train-routes-links" href="train.html">Hyderabad </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+<!--footer-->
+<div class="container footer">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <p class="col-md-4 mb-0 text-muted">© 2023 Trainin.Cloud, Inc</p>
+
+    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+    </a>
+
+
+
+    
+    <ul class="nav col-md-4 justify-content-end">
+      <li class="nav-item"><a href="/Home.html" class="nav-link px-2 text-muted"><img style="margin-right:0.5rem; height:32; width:32" src="home-3-line.png" style="background-color:aliceblue" /></a></li>
+      <li class="nav-item"><a href="/train.html" class="nav-link px-2 text-muted"><img style="margin-right:0.5rem; height:32; width:32" src="train-line.png" style="background-color:aliceblue" /></a></li>
+      <li class="nav-item"><a href="/about.html" class="nav-link px-2 text-muted"><img style="margin-right:0.5rem; height:32; width:32" src="community-line.png" style="background-color:aliceblue" /></a></li>
+      <li class="nav-item"><a href="/contact.html" class="nav-link px-2 text-muted"><img style="margin-right:0.5rem; height:32" width="32" src="phone-line.png" style="background-color:aliceblue" /></a></li>
+      
+    </ul>
+  </footer>
+</div>
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
